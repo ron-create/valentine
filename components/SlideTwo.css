@@ -1,0 +1,120 @@
+.slide-two {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  background: var(--bg-dark);
+}
+
+.slide-two__inner {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.slide-two__title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+  letter-spacing: 0.02em;
+}
+
+.slide-two__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.slide-two__visual {
+  min-height: 320px;
+}
+
+.slide-two__image {
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.slide-two__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.slide-two__block {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.slide-two__block:last-child {
+  border-bottom: none;
+}
+
+.slide-two__block-label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.slide-two__block-value {
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.slide-two__tiktok {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border);
+}
+
+.slide-two__tiktok-title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.02em;
+}
+
+.slide-two__tiktok-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.slide-two__tiktok-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+  width: fit-content;
+}
+
+.slide-two__tiktok-link:hover {
+  color: var(--text-primary);
+  transform: translateX(4px);
+}
+
+.slide-two__tiktok-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 900px) {
+  .slide-two__grid {
+    grid-template-columns: 1fr;
+  }
+  .slide-two__image {
+    min-height: 240px;
+  }
+}

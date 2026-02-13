@@ -1,0 +1,6 @@
+export { default as IntroOverlay } from './IntroOverlay'
+export { default as SlideOne } from './SlideOne'
+export { default as SlideTwo } from './SlideTwo'
+export { default as SlideThree } from './SlideThree'
+export { default as SlideFour } from './SlideFour'
+export { default as SlideFive } from './SlideFive'
